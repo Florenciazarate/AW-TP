@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito · Doragon</title>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" aria-label="Doragon, ir al inicio">
+      <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="40" height="40">
+      <span>DORAGON</span>
+    </a>
+
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+
+    <form role="search" action="catalogo.html" method="get">
+      <label for="buscador">Buscar carta o sobre</label>
+      <input type="search" id="buscador" name="q" placeholder="Buscar carta o sobre">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <a href="cuenta.html" aria-label="Mi cuenta">
+      <img src="assets/icons/cuenta.svg" alt="" width="24" height="24">
+      Mi cuenta
+    </a>
+    <a href="carrito.html" aria-label="Carrito de compras" aria-current="page">
+      <img src="assets/icons/carrito.svg" alt="" width="24" height="24">
+      Carrito
+    </a>
+  </header>
+
+  <main>
+
+    <h1>Carrito</h1>
+
+    <ol aria-label="Progreso de compra">
+      <li aria-current="step">1. Carrito</li>
+      <li>2. Pago</li>
+      <li>3. Confirmación</li>
+    </ol>
+
+    <section aria-labelledby="items-titulo">
+      <h2 id="items-titulo">Tu carrito · 3 productos</h2>
+
+      <form>
+        <ul>
+          <li>
+            <img src="assets/img/sobres/legendario-shenron.svg" alt="Sobre Legendario Shenron">
+            <h3>Sobre Legendario Shenron</h3>
+            <p>5 cartas · garantiza 4★ o superior</p>
+            <label for="cant-shenron">Cantidad</label>
+            <input type="number" id="cant-shenron" name="cantidad_shenron" value="1" min="1" max="10">
+            <p>$8.000</p>
+            <button type="submit" name="quitar" value="shenron">Quitar</button>
+          </li>
+          <li>
+            <img src="assets/img/sobres/saiyan-elite.svg" alt="Sobre Saiyan Élite">
+            <h3>Sobre Saiyan Élite</h3>
+            <p>5 cartas · Colección Saiyan</p>
+            <label for="cant-saiyan">Cantidad</label>
+            <input type="number" id="cant-saiyan" name="cantidad_saiyan" value="1" min="1" max="10">
+            <p>$4.900</p>
+            <button type="submit" name="quitar" value="saiyan">Quitar</button>
+          </li>
+          <li>
+            <img src="assets/img/sobres/fuerzas-especiales.svg" alt="Sobre Fuerzas Especiales">
+            <h3>Sobre Fuerzas Especiales</h3>
+            <p>5 cartas · Serie 1</p>
+            <label for="cant-fuerzas">Cantidad</label>
+            <input type="number" id="cant-fuerzas" name="cantidad_fuerzas" value="1" min="1" max="10">
+            <p>$3.800</p>
+            <button type="submit" name="quitar" value="fuerzas">Quitar</button>
+          </li>
+        </ul>
+
+        <button type="submit">Actualizar carrito</button>
+      </form>
+
+      <p><a href="catalogo.html">Seguir comprando</a></p>
+    </section>
+
+    <section aria-labelledby="envio-titulo">
+      <h2 id="envio-titulo">Envío</h2>
+
+      <form>
+        <fieldset>
+          <legend>Método de envío</legend>
+          <label><input type="radio" name="envio" value="domicilio" checked> Domicilio · 48 h · Gratis</label>
+          <label><input type="radio" name="envio" value="retiro"> Punto de retiro · $0</label>
+        </fieldset>
+
+        <label for="codigo-postal">Código postal</label>
+        <input type="text" id="codigo-postal" name="codigo_postal" inputmode="numeric">
+      </form>
+    </section>
+
+    <section aria-labelledby="descuento-titulo">
+      <h2 id="descuento-titulo">Código de descuento</h2>
+
+      <form>
+        <label for="descuento">Código de descuento</label>
+        <input type="text" id="descuento" name="descuento">
+        <button type="submit">Aplicar</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="resumen-titulo">
+      <h2 id="resumen-titulo">Resumen de compra</h2>
+
+      <dl>
+        <dt>Subtotal</dt>
+        <dd>$16.700</dd>
+        <dt>Envío</dt>
+        <dd>Gratis</dd>
+        <dt>Descuento drop</dt>
+        <dd>−$900</dd>
+        <dt>Total</dt>
+        <dd>$15.800</dd>
+      </dl>
+
+      <p><a href="checkout.html">Ir al pago</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="32" height="32">
+      <p>Licenciatario oficial de cartas coleccionables Dragon Ball en Latinoamérica.</p>
+    </div>
+
+    <nav aria-label="Tienda">
+      <h2>Tienda</h2>
+      <ul>
+        <li><a href="catalogo.html">Sobres</a></li>
+        <li><a href="catalogo.html">Cartas sueltas</a></li>
+        <li><a href="catalogo.html">Drop 5★</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Institucional">
+      <h2>Institucional</h2>
+      <ul>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="nosotros.html#terminos">Términos y condiciones</a></li>
+      </ul>
+    </nav>
+
+    <form>
+      <h2>Novedades de drops</h2>
+      <label for="newsletter-email">Tu email</label>
+      <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" aria-required="true" required>
+      <button type="submit">Suscribirme</button>
+    </form>
+
+    <p>© 2026 Doragon. Dragon Ball™ y personajes relacionados son marcas de sus respectivos titulares. Buenos Aires, Argentina.</p>
+  </footer>
+
+</body>
+</html>

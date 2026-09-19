@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo · Doragon</title>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" aria-label="Doragon, ir al inicio">
+      <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="40" height="40">
+      <span>DORAGON</span>
+    </a>
+
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+
+    <form role="search" action="catalogo.html" method="get">
+      <label for="buscador">Buscar carta o sobre</label>
+      <input type="search" id="buscador" name="q" placeholder="Buscar carta o sobre">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <a href="cuenta.html" aria-label="Mi cuenta">
+      <img src="assets/icons/cuenta.svg" alt="" width="24" height="24">
+      Mi cuenta
+    </a>
+    <a href="carrito.html" aria-label="Carrito de compras">
+      <img src="assets/icons/carrito.svg" alt="" width="24" height="24">
+      Carrito
+    </a>
+  </header>
+
+  <main>
+
+    <h1>Sobres y cartas</h1>
+    <p>36 resultados · los filtros se aplican sin recargar</p>
+
+    <section aria-labelledby="filtros-titulo">
+      <h2 id="filtros-titulo">Filtros</h2>
+
+      <form>
+        <fieldset>
+          <legend>Tipo de producto</legend>
+          <label><input type="radio" name="tipo" value="sobres" checked> Sobres</label>
+          <label><input type="radio" name="tipo" value="cartas"> Cartas sueltas</label>
+          <label><input type="radio" name="tipo" value="exclusivas"> Exclusivas</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Colección</legend>
+          <label><input type="checkbox" name="coleccion" value="saiyan" checked> Saiyan (14)</label>
+          <label><input type="checkbox" name="coleccion" value="namek"> Namek (9)</label>
+          <label><input type="checkbox" name="coleccion" value="cell"> Torneo de Cell (7)</label>
+          <label><input type="checkbox" name="coleccion" value="fuerzas-especiales"> Fuerzas Especiales (6)</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Rareza</legend>
+          <label><input type="checkbox" name="rareza" value="5" checked> 5★</label>
+          <label><input type="checkbox" name="rareza" value="4"> 4★</label>
+          <label><input type="checkbox" name="rareza" value="3"> 3★</label>
+          <label><input type="checkbox" name="rareza" value="2"> 2★</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Precio</legend>
+          <label for="precio-min">Mínimo</label>
+          <input type="number" id="precio-min" name="precio_min" min="0" max="8000" step="100" value="0">
+          <label for="precio-max">Máximo</label>
+          <input type="number" id="precio-max" name="precio_max" min="0" max="8000" step="100" value="8000">
+        </fieldset>
+
+        <fieldset>
+          <legend>Disponibilidad</legend>
+          <label><input type="checkbox" name="stock" value="1"> Solo con stock</label>
+        </fieldset>
+
+        <label for="orden">Ordenar por</label>
+        <select id="orden" name="orden">
+          <option value="nuevos" selected>Más nuevos</option>
+          <option value="precio-asc">Precio: menor a mayor</option>
+          <option value="precio-desc">Precio: mayor a menor</option>
+        </select>
+
+        <button type="submit">Aplicar filtros</button>
+        <button type="reset">Limpiar</button>
+      </form>
+
+      <p>Filtros aplicados: Colección: Saiyan, Rareza: 5★, Precio: $0 – $8.000</p>
+    </section>
+
+    <section aria-labelledby="resultados-titulo">
+      <h2 id="resultados-titulo">Resultados</h2>
+
+      <ul>
+        <li>
+          <img src="assets/img/sobres/saiyan-elite.svg" alt="Sobre Saiyan Élite">
+          <h3>Sobre Saiyan Élite</h3>
+          <p>5 cartas · 1 garantizada 3★ o superior</p>
+          <p>$4.900</p>
+          <a href="tirada.html">Abrir</a>
+        </li>
+        <li>
+          <img src="assets/img/sobres/legendario-shenron.svg" alt="Sobre Legendario Shenron">
+          <h3>Sobre Legendario Shenron</h3>
+          <p>5 cartas · garantiza 4★ o superior</p>
+          <p>$8.000</p>
+          <a href="tirada.html">Abrir</a>
+        </li>
+        <li>
+          <img src="assets/img/sobres/torneo-cell.svg" alt="Sobre Torneo de Cell">
+          <h3>Sobre Torneo de Cell</h3>
+          <p>5 cartas · Serie 2</p>
+          <p>$5.400</p>
+          <p>Sin stock</p>
+          <a href="nosotros.html#contacto">Avisame</a>
+        </li>
+        <li>
+          <img src="assets/img/sobres/namek.svg" alt="Sobre Namek">
+          <h3>Sobre Namek</h3>
+          <p>5 cartas · Colección Namek</p>
+          <p>$4.200</p>
+          <a href="tirada.html">Abrir</a>
+        </li>
+        <li>
+          <img src="assets/img/sobres/fuerzas-especiales.svg" alt="Sobre Fuerzas Especiales">
+          <h3>Sobre Fuerzas Especiales</h3>
+          <p>5 cartas · Serie 1</p>
+          <p>$3.800</p>
+          <p>Sin stock</p>
+          <a href="nosotros.html#contacto">Avisame</a>
+        </li>
+        <li>
+          <img src="assets/img/sobres/torneo-mundial.svg" alt="Sobre Torneo Mundial">
+          <h3>Sobre Torneo Mundial</h3>
+          <p>5 cartas · edición 2026</p>
+          <p>$6.100</p>
+          <a href="tirada.html">Abrir</a>
+        </li>
+      </ul>
+
+      <p><button type="button">Cargar más sobres</button></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="32" height="32">
+      <p>Licenciatario oficial de cartas coleccionables Dragon Ball en Latinoamérica.</p>
+    </div>
+
+    <nav aria-label="Tienda">
+      <h2>Tienda</h2>
+      <ul>
+        <li><a href="catalogo.html">Sobres</a></li>
+        <li><a href="catalogo.html">Cartas sueltas</a></li>
+        <li><a href="catalogo.html">Drop 5★</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Institucional">
+      <h2>Institucional</h2>
+      <ul>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="nosotros.html#terminos">Términos y condiciones</a></li>
+      </ul>
+    </nav>
+
+    <form>
+      <h2>Novedades de drops</h2>
+      <label for="newsletter-email">Tu email</label>
+      <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" aria-required="true" required>
+      <button type="submit">Suscribirme</button>
+    </form>
+
+    <p>© 2026 Doragon. Dragon Ball™ y personajes relacionados son marcas de sus respectivos titulares. Buenos Aires, Argentina.</p>
+  </footer>
+
+</body>
+</html>

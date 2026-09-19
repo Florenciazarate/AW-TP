@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago · Doragon</title>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" aria-label="Doragon, ir al inicio">
+      <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="40" height="40">
+      <span>DORAGON</span>
+    </a>
+
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+
+    <form role="search" action="catalogo.html" method="get">
+      <label for="buscador">Buscar carta o sobre</label>
+      <input type="search" id="buscador" name="q" placeholder="Buscar carta o sobre">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <a href="cuenta.html" aria-label="Mi cuenta">
+      <img src="assets/icons/cuenta.svg" alt="" width="24" height="24">
+      Mi cuenta
+    </a>
+    <a href="carrito.html" aria-label="Carrito de compras" aria-current="page">
+      <img src="assets/icons/carrito.svg" alt="" width="24" height="24">
+      Carrito
+    </a>
+  </header>
+
+  <main>
+
+    <h1>Pago</h1>
+
+    <ol aria-label="Progreso de compra">
+      <li>1. Carrito</li>
+      <li aria-current="step">2. Pago</li>
+      <li>3. Confirmación</li>
+    </ol>
+
+    <section aria-labelledby="envio-datos-titulo">
+      <h2 id="envio-datos-titulo">Datos de envío</h2>
+
+      <form>
+        <label for="chk-nombre">Nombre completo</label>
+        <input type="text" id="chk-nombre" name="nombre" value="Nahuel Ferreyra" aria-required="true" required>
+
+        <label for="chk-dni">Documento</label>
+        <input type="text" id="chk-dni" name="documento" placeholder="DNI" aria-required="true" required>
+
+        <label for="chk-direccion">Dirección</label>
+        <input type="text" id="chk-direccion" name="direccion" placeholder="Calle y número" aria-required="true" required>
+
+        <label for="chk-ciudad">Ciudad / código postal</label>
+        <input type="text" id="chk-ciudad" name="ciudad" placeholder="CABA · 1425" aria-required="true" required>
+      </form>
+    </section>
+
+    <section aria-labelledby="pago-titulo">
+      <h2 id="pago-titulo">Método de pago</h2>
+
+      <form>
+        <fieldset>
+          <legend>Elegí cómo pagar</legend>
+          <label><input type="radio" name="metodo-pago" value="tarjeta" checked> Tarjeta</label>
+          <label><input type="radio" name="metodo-pago" value="billetera"> Billetera virtual</label>
+          <label><input type="radio" name="metodo-pago" value="transferencia"> Transferencia</label>
+        </fieldset>
+
+        <label for="chk-tarjeta">Número de tarjeta</label>
+        <input type="text" id="chk-tarjeta" name="numero_tarjeta" placeholder="0000 0000 0000 0000" inputmode="numeric" aria-required="true" required>
+
+        <label for="chk-vencimiento">Vencimiento</label>
+        <input type="text" id="chk-vencimiento" name="vencimiento" placeholder="MM/AA" aria-required="true" required>
+
+        <label for="chk-cvv">CVV</label>
+        <input type="text" id="chk-cvv" name="cvv" inputmode="numeric" aria-required="true" required>
+      </form>
+    </section>
+
+    <section aria-labelledby="pedido-titulo">
+      <h2 id="pedido-titulo">Tu pedido</h2>
+
+      <ul>
+        <li>Sobre Legendario Shenron x1 — $8.000</li>
+        <li>Sobre Saiyan Élite x1 — $4.900</li>
+        <li>Sobre Fuerzas Especiales x1 — $3.800</li>
+      </ul>
+
+      <dl>
+        <dt>Total</dt>
+        <dd>$15.800</dd>
+      </dl>
+
+      <form action="confirmacion.html" method="get">
+        <button type="submit">Confirmar pago</button>
+      </form>
+
+      <p>Al confirmar aceptás los <a href="nosotros.html#terminos">términos y condiciones</a> y la política de aperturas.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="32" height="32">
+      <p>Licenciatario oficial de cartas coleccionables Dragon Ball en Latinoamérica.</p>
+    </div>
+
+    <nav aria-label="Tienda">
+      <h2>Tienda</h2>
+      <ul>
+        <li><a href="catalogo.html">Sobres</a></li>
+        <li><a href="catalogo.html">Cartas sueltas</a></li>
+        <li><a href="catalogo.html">Drop 5★</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Institucional">
+      <h2>Institucional</h2>
+      <ul>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="nosotros.html#terminos">Términos y condiciones</a></li>
+      </ul>
+    </nav>
+
+    <form>
+      <h2>Novedades de drops</h2>
+      <label for="newsletter-email">Tu email</label>
+      <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" aria-required="true" required>
+      <button type="submit">Suscribirme</button>
+    </form>
+
+    <p>© 2026 Doragon. Dragon Ball™ y personajes relacionados son marcas de sus respectivos titulares. Buenos Aires, Argentina.</p>
+  </footer>
+
+</body>
+</html>

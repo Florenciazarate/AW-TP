@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" role="img" aria-label="Sobre Fuerzas Especiales">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a6fc9"/>
+      <stop offset="100%" stop-color="#2e2154"/>
+    </linearGradient>
+    <linearGradient id="flap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a98ee0"/>
+      <stop offset="100%" stop-color="#4a3583"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="10" y="10" width="380" height="540" rx="18" fill="url(#body)" stroke="#f2e9ff" stroke-width="4"/>
+  <rect x="20" y="20" width="360" height="520" rx="12" fill="none" stroke="#f2e9ff" stroke-width="1" opacity="0.5"/>
+
+  <polygon points="10,28 390,28 200,230" fill="url(#flap)" stroke="#f2e9ff" stroke-width="3"/>
+  <line x1="10" y1="28" x2="200" y2="230" stroke="#f2e9ff" stroke-width="1" opacity="0.4"/>
+  <line x1="390" y1="28" x2="200" y2="230" stroke="#f2e9ff" stroke-width="1" opacity="0.4"/>
+
+  <circle cx="200" cy="205" r="52" fill="#2e2154" stroke="#f2e9ff" stroke-width="4"/>
+  <circle cx="200" cy="205" r="24" fill="none" stroke="#c9ff4e" stroke-width="4"/>
+  <circle cx="200" cy="205" r="10" fill="#c9ff4e"/>
+  <line x1="200" y1="181" x2="200" y2="168" stroke="#f2e9ff" stroke-width="4"/>
+
+  <rect x="40" y="450" width="320" height="66" rx="8" fill="#2e2154" stroke="#f2e9ff" stroke-width="2"/>
+  <text x="200" y="482" fill="#f2e9ff" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" letter-spacing="1.5" text-anchor="middle">FUERZAS</text>
+  <text x="200" y="507" fill="#f2e9ff" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" letter-spacing="1.5" text-anchor="middle">ESPECIALES</text>
+
+  <circle cx="46" cy="46" r="14" fill="#ff9d1f" stroke="#a85400" stroke-width="2"/>
+  <circle cx="354" cy="46" r="14" fill="#ff9d1f" stroke="#a85400" stroke-width="2"/>
+</svg>

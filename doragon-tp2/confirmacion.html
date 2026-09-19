@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido confirmado · Doragon</title>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" aria-label="Doragon, ir al inicio">
+      <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="40" height="40">
+      <span>DORAGON</span>
+    </a>
+
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+
+    <form role="search" action="catalogo.html" method="get">
+      <label for="buscador">Buscar carta o sobre</label>
+      <input type="search" id="buscador" name="q" placeholder="Buscar carta o sobre">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <a href="cuenta.html" aria-label="Mi cuenta">
+      <img src="assets/icons/cuenta.svg" alt="" width="24" height="24">
+      Mi cuenta
+    </a>
+    <a href="carrito.html" aria-label="Carrito de compras">
+      <img src="assets/icons/carrito.svg" alt="" width="24" height="24">
+      Carrito
+    </a>
+  </header>
+
+  <main>
+
+    <h1>Pedido confirmado</h1>
+
+    <ol aria-label="Progreso de compra">
+      <li>1. Carrito</li>
+      <li>2. Pago</li>
+      <li aria-current="step">3. Confirmación</li>
+    </ol>
+
+    <section aria-labelledby="confirmacion-titulo">
+      <h2 id="confirmacion-titulo">Listo, tu pedido está confirmado</h2>
+      <p>Te enviamos el detalle por email. Tus sobres ya están disponibles para abrir cuando quieras desde Mi cuenta.</p>
+
+      <dl>
+        <dt>N° de pedido</dt>
+        <dd>DR-14829</dd>
+        <dt>Total</dt>
+        <dd>$15.800</dd>
+        <dt>Entrega estimada</dt>
+        <dd>29 de agosto</dd>
+      </dl>
+
+      <p>
+        <a href="tirada.html">Abrir mis sobres</a>
+        <a href="cuenta.html#tiradas">Ver mis tiradas</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="32" height="32">
+      <p>Licenciatario oficial de cartas coleccionables Dragon Ball en Latinoamérica.</p>
+    </div>
+
+    <nav aria-label="Tienda">
+      <h2>Tienda</h2>
+      <ul>
+        <li><a href="catalogo.html">Sobres</a></li>
+        <li><a href="catalogo.html">Cartas sueltas</a></li>
+        <li><a href="catalogo.html">Drop 5★</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Institucional">
+      <h2>Institucional</h2>
+      <ul>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="nosotros.html#terminos">Términos y condiciones</a></li>
+      </ul>
+    </nav>
+
+    <form>
+      <h2>Novedades de drops</h2>
+      <label for="newsletter-email">Tu email</label>
+      <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" aria-required="true" required>
+      <button type="submit">Suscribirme</button>
+    </form>
+
+    <p>© 2026 Doragon. Dragon Ball™ y personajes relacionados son marcas de sus respectivos titulares. Buenos Aires, Argentina.</p>
+  </footer>
+
+</body>
+</html>

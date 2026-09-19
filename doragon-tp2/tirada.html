@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apertura de sobre · Doragon</title>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" aria-label="Doragon, ir al inicio">
+      <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="40" height="40">
+      <span>DORAGON</span>
+    </a>
+
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+    </nav>
+
+    <form role="search" action="catalogo.html" method="get">
+      <label for="buscador">Buscar carta o sobre</label>
+      <input type="search" id="buscador" name="q" placeholder="Buscar carta o sobre">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <a href="cuenta.html" aria-label="Mi cuenta">
+      <img src="assets/icons/cuenta.svg" alt="" width="24" height="24">
+      Mi cuenta
+    </a>
+    <a href="carrito.html" aria-label="Carrito de compras">
+      <img src="assets/icons/carrito.svg" alt="" width="24" height="24">
+      Carrito
+    </a>
+  </header>
+
+  <main>
+
+    <h1>Apertura de sobre</h1>
+
+    <section aria-labelledby="estado-titulo">
+      <h2 id="estado-titulo">Sobre #DR-14829</h2>
+      <p>Probabilidad de carta 5★: 4%</p>
+      <p>Estado: reveal completado</p>
+      <p><button type="button">Omitir animación</button></p>
+    </section>
+
+    <section aria-labelledby="reveal-titulo">
+      <h2 id="reveal-titulo">¡Obtuviste una 5★!</h2>
+
+      <img src="assets/img/cartas/son-goku-kaioken.svg" alt="Son Goku, Kaio-ken x20">
+      <h3>Son Goku · Kaio-ken x20</h3>
+      <p>Legendaria · Saiyan · 014/120 · nueva en tu colección</p>
+      <p>Carta holográfica con acabado prismático y numeración limitada. Ya está acreditada en tu inventario y podés pedir el envío cuando completes la colección.</p>
+
+      <dl>
+        <dt>En inventario</dt>
+        <dd>1</dd>
+        <dt>Colección</dt>
+        <dd>63/120</dd>
+        <dt>Rareza</dt>
+        <dd>4%</dd>
+        <dt>Serie</dt>
+        <dd>S2</dd>
+      </dl>
+
+      <p>
+        <a href="tirada.html">Abrir otro sobre</a>
+        <a href="cuenta.html#inventario">Ver mi inventario</a>
+      </p>
+    </section>
+
+    <section aria-labelledby="resto-titulo">
+      <h2 id="resto-titulo">Resto del sobre</h2>
+      <p>Las otras 4 cartas que obtuviste: 4 acreditadas, 1 duplicada.</p>
+
+      <ul>
+        <li>
+          <h3>Piccolo · Namek</h3>
+          <p>3★ · acreditada</p>
+        </li>
+        <li>
+          <h3>Krilin · Torneo</h3>
+          <p>2★ · acreditada</p>
+        </li>
+        <li>
+          <h3>Vegeta · Saiyan</h3>
+          <p>4★ · acreditada</p>
+        </li>
+        <li>
+          <h3>Gohan · Cell</h3>
+          <p>3★ · duplicada</p>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="progreso-titulo">
+      <h2 id="progreso-titulo">Progreso de colección</h2>
+      <dl>
+        <dt>Saiyan</dt>
+        <dd>63/120</dd>
+        <dt>Namek</dt>
+        <dd>18/90</dd>
+        <dt>Torneo de Cell</dt>
+        <dd>41/60</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="duplicadas-titulo">
+      <h2 id="duplicadas-titulo">Duplicadas para canje</h2>
+      <p>17 cartas duplicadas en tu inventario. No tienen reembolso del 100%, pero podés canjearlas por crédito parcial.</p>
+      <p>
+        <button type="button">Canjear duplicadas</button>
+        <button type="button">Compartir resultado</button>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="32" height="32">
+      <p>Licenciatario oficial de cartas coleccionables Dragon Ball en Latinoamérica.</p>
+    </div>
+
+    <nav aria-label="Tienda">
+      <h2>Tienda</h2>
+      <ul>
+        <li><a href="catalogo.html">Sobres</a></li>
+        <li><a href="catalogo.html">Cartas sueltas</a></li>
+        <li><a href="catalogo.html">Drop 5★</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Institucional">
+      <h2>Institucional</h2>
+      <ul>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="nosotros.html#terminos">Términos y condiciones</a></li>
+      </ul>
+    </nav>
+
+    <form>
+      <h2>Novedades de drops</h2>
+      <label for="newsletter-email">Tu email</label>
+      <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" aria-required="true" required>
+      <button type="submit">Suscribirme</button>
+    </form>
+
+    <p>© 2026 Doragon. Dragon Ball™ y personajes relacionados son marcas de sus respectivos titulares. Buenos Aires, Argentina.</p>
+  </footer>
+
+</body>
+</html>
