@@ -1,0 +1,35 @@
+:root {
+  --color-tinta: #1b1b2e;
+  --color-texto: #62606e;
+  --color-suave: #9a94a3;
+  --color-fondo: #fdf7e3;
+  --color-campo: #fff8dc;
+  --color-blanco: #ffffff;
+  --color-borde: #e8dfd3;
+  --color-pista: #f0e7da;
+
+  --color-primario: #f4791f;
+  --color-primario-oscuro: #b84e0d;
+  --color-verde: #3f8258;
+  --color-azul: #2e6fa8;
+  --color-amarillo: #ffc93c;
+  --color-rojo: #c4362b;
+
+  --fuente: "Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radio-chico: 12px;
+  --radio-medio: 16px;
+  --radio-grande: 22px;
+  --radio-pildora: 999px;
+
+  --sombra-suave: 0 10px 26px rgba(27, 27, 46, 0.06);
+  --sombra-boton: 0 12px 26px rgba(244, 121, 31, 0.3);
+
+  --espacio-1: 0.5rem;
+  --espacio-2: 1rem;
+  --espacio-3: 1.5rem;
+  --espacio-4: 2rem;
+  --espacio-5: 3rem;
+
+  --ancho-maximo: 1240px;
+}
