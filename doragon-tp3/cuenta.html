@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi cuenta · Doragon</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo/doragon-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="index.html" aria-label="Doragon, ir al inicio">
+        <img src="assets/img/logo/doragon-logo.svg" alt="" width="40" height="40">
+        <span><span class="nombre">DORAGON</span><span class="lema">Cartas oficiales</span></span>
+      </a>
+
+      <nav class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <form class="buscador" role="search" action="catalogo.html" method="get">
+        <label class="solo-lectores" for="buscador">Buscar carta o sobre</label>
+        <input type="search" id="buscador" name="q" placeholder="Buscar carta o sobre">
+        <button type="submit">
+          <img src="assets/icons/buscar.svg" alt="" width="18" height="18">
+          <span class="solo-lectores">Buscar</span>
+        </button>
+      </form>
+
+      <a class="icono cuenta" href="cuenta.html" aria-current="page">
+        <img src="assets/icons/cuenta.svg" alt="" width="18" height="18">
+        <span class="solo-lectores">Mi cuenta</span>
+      </a>
+      <a class="icono carrito" href="carrito.html">
+        <img src="assets/icons/carrito.svg" alt="" width="18" height="18">
+        <span class="solo-lectores">Carrito, 3 productos</span>
+        <span class="contador" aria-hidden="true">3</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="principal contenedor pagina-cuenta">
+
+    <h1>Mi cuenta</h1>
+
+    <div class="contenido">
+
+      <div class="lateral">
+        <section class="perfil tarjeta" aria-labelledby="perfil-titulo">
+          <span class="avatar" aria-hidden="true">N</span>
+          <div>
+            <h2 id="perfil-titulo">Hola, Nahuel</h2>
+            <p>Nahuel Ferreyra</p>
+            <p class="correo">nahuel@mail.com</p>
+          </div>
+          <p class="etiqueta nivel">Coleccionista nivel 4</p>
+          <p class="salir"><a href="index.html">Cerrar sesión</a></p>
+        </section>
+
+        <nav class="secciones tarjeta" aria-label="Secciones de mi cuenta">
+          <ul>
+            <li><a href="#inventario">Inventario de cartas</a></li>
+            <li><a href="#direcciones">Direcciones de envío</a></li>
+            <li><a href="#pagos">Medios de pago</a></li>
+            <li><a href="#tiradas">Tiradas</a></li>
+          </ul>
+        </nav>
+
+        <section class="tarjeta" aria-labelledby="progreso-titulo">
+          <h2 id="progreso-titulo">Progreso de colección</h2>
+          <dl class="progreso">
+            <div>
+              <dt>Saiyan</dt>
+              <dd><progress class="barra" value="63" max="120">63 de 120</progress> 63/120</dd>
+            </div>
+            <div>
+              <dt>Namek</dt>
+              <dd><progress class="barra azul" value="18" max="90">18 de 90</progress> 18/90</dd>
+            </div>
+            <div>
+              <dt>Torneo de Cell</dt>
+              <dd><progress class="barra verde" value="41" max="60">41 de 60</progress> 41/60</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+
+      <div class="panel">
+
+        <section aria-labelledby="estadisticas-titulo">
+          <h2 class="solo-lectores" id="estadisticas-titulo">Estadísticas de colección</h2>
+          <dl class="estadisticas">
+            <div class="item">
+              <dt>Cartas totales</dt>
+              <dd>122</dd>
+            </div>
+            <div class="item">
+              <dt>Cartas 5★</dt>
+              <dd>6</dd>
+            </div>
+            <div class="item">
+              <dt>Sobres abiertos</dt>
+              <dd>34</dd>
+            </div>
+            <div class="item">
+              <dt>Duplicadas</dt>
+              <dd>17</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="inventario tarjeta seccion" id="inventario" aria-labelledby="inventario-titulo">
+          <div class="encabezado">
+            <h2 id="inventario-titulo">Inventario de cartas</h2>
+            <form>
+              <fieldset>
+                <legend class="solo-lectores">Filtrar inventario</legend>
+                <div class="pildoras">
+                  <label class="pildora"><input class="solo-lectores" type="radio" name="inv-filtro" value="todas" checked> Todas</label>
+                  <label class="pildora"><input class="solo-lectores" type="radio" name="inv-filtro" value="5"> 5★</label>
+                  <label class="pildora"><input class="solo-lectores" type="radio" name="inv-filtro" value="4"> 4★</label>
+                  <label class="pildora"><input class="solo-lectores" type="radio" name="inv-filtro" value="duplicadas"> Duplicadas</label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+          <ul class="grilla">
+            <li class="tarjeta-carta vertical">
+              <img src="assets/img/cartas/son-goku-kaioken.svg" alt="Son Goku, Kaio-ken x20" width="172" height="316">
+              <h3 class="nombre">Son Goku</h3>
+              <p class="detalle">5★ · Saiyan · 014/120</p>
+            </li>
+            <li class="tarjeta-carta vertical">
+              <img src="assets/img/cartas/vegeta.svg" alt="Vegeta" width="293" height="210">
+              <h3 class="nombre">Vegeta</h3>
+              <p class="detalle">4★ · Saiyan</p>
+            </li>
+            <li class="tarjeta-carta vertical">
+              <img src="assets/img/cartas/piccolo.svg" alt="Piccolo" width="293" height="210">
+              <h3 class="nombre">Piccolo</h3>
+              <p class="detalle">3★ · Namek</p>
+            </li>
+            <li class="tarjeta-carta vertical">
+              <img src="assets/img/cartas/krilin.svg" alt="Krilin" width="293" height="210">
+              <h3 class="nombre">Krilin</h3>
+              <p class="detalle">2★ · Torneo</p>
+            </li>
+            <li class="tarjeta-carta vertical">
+              <img src="assets/img/cartas/gohan.svg" alt="Gohan" width="293" height="210">
+              <h3 class="nombre">Gohan</h3>
+              <p class="detalle">3★ · Torneo de Cell · duplicada</p>
+            </li>
+          </ul>
+
+          <p class="mas"><button class="boton secundario" type="button">Cargar más cartas</button></p>
+        </section>
+
+        <section class="tarjeta" id="direcciones" aria-labelledby="direcciones-titulo">
+          <h2 id="direcciones-titulo">Direcciones de envío</h2>
+
+          <ul class="filas">
+            <li>
+              <div>
+                <p><strong>Casa</strong></p>
+                <address>Av. Corrientes 1234, CABA, 1425</address>
+              </div>
+              <button class="boton secundario chico" type="button">Editar</button>
+            </li>
+          </ul>
+
+          <button class="boton secundario chico" type="button">Agregar dirección</button>
+        </section>
+
+        <section class="tarjeta" id="pagos" aria-labelledby="pagos-titulo">
+          <h2 id="pagos-titulo">Medios de pago</h2>
+
+          <ul class="filas">
+            <li>
+              <p>Tarjeta terminada en 4242</p>
+              <button class="boton secundario chico" type="button">Eliminar</button>
+            </li>
+          </ul>
+
+          <button class="boton secundario chico" type="button">Agregar medio de pago</button>
+        </section>
+
+        <section class="tiradas tarjeta" id="tiradas" aria-labelledby="tiradas-titulo">
+          <h2 id="tiradas-titulo">Tiradas</h2>
+          <p class="subtitulo">34 sobres abiertos hasta ahora. Volvé a ver el detalle de tu última apertura o abrí uno nuevo.</p>
+          <p class="acciones">
+            <a class="boton primario" href="tirada.html">Abrir un sobre</a>
+            <a class="boton secundario" href="tirada.html">Ver última tirada</a>
+          </p>
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="marca">
+        <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="32" height="32">
+        <p>Licenciatario oficial de cartas coleccionables Dragon Ball en Latinoamérica.</p>
+      </div>
+
+      <nav class="enlaces" aria-label="Tienda">
+        <h2>Tienda</h2>
+        <ul>
+          <li><a href="catalogo.html">Sobres</a></li>
+          <li><a href="catalogo.html">Cartas sueltas</a></li>
+          <li><a href="catalogo.html">Drop 5★</a></li>
+        </ul>
+      </nav>
+
+      <nav class="enlaces" aria-label="Institucional">
+        <h2>Institucional</h2>
+        <ul>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="nosotros.html#terminos">Términos y condiciones</a></li>
+        </ul>
+      </nav>
+
+      <form class="suscripcion">
+        <h2>Novedades de drops</h2>
+        <label class="solo-lectores" for="newsletter-email">Tu email</label>
+        <div class="campos">
+          <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" aria-required="true" required>
+          <button class="boton oscuro" type="submit">
+            <img src="assets/icons/flecha-derecha.svg" alt="" width="16" height="16">
+            <span class="solo-lectores">Suscribirme</span>
+          </button>
+        </div>
+      </form>
+
+      <p class="legal">© 2026 Doragon. Dragon Ball™ y personajes relacionados son marcas de sus respectivos titulares. Buenos Aires, Argentina.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

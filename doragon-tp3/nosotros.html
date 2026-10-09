@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros · Doragon</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo/doragon-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="index.html" aria-label="Doragon, ir al inicio">
+        <img src="assets/img/logo/doragon-logo.svg" alt="" width="40" height="40">
+        <span><span class="nombre">DORAGON</span><span class="lema">Cartas oficiales</span></span>
+      </a>
+
+      <nav class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html" aria-current="page">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <form class="buscador" role="search" action="catalogo.html" method="get">
+        <label class="solo-lectores" for="buscador">Buscar carta o sobre</label>
+        <input type="search" id="buscador" name="q" placeholder="Buscar carta o sobre">
+        <button type="submit">
+          <img src="assets/icons/buscar.svg" alt="" width="18" height="18">
+          <span class="solo-lectores">Buscar</span>
+        </button>
+      </form>
+
+      <a class="icono cuenta" href="cuenta.html">
+        <img src="assets/icons/cuenta.svg" alt="" width="18" height="18">
+        <span class="solo-lectores">Mi cuenta</span>
+      </a>
+      <a class="icono carrito" href="carrito.html">
+        <img src="assets/icons/carrito.svg" alt="" width="18" height="18">
+        <span class="solo-lectores">Carrito, 3 productos</span>
+        <span class="contador" aria-hidden="true">3</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="principal contenedor pagina-nosotros">
+
+    <h1>Sobre Doragon</h1>
+
+    <div class="contenido">
+
+      <nav class="indice tarjeta" aria-label="En esta página">
+        <ul>
+          <li><a href="#quienes-titulo">Quiénes somos</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#terminos">Términos y condiciones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="bloques">
+
+        <div class="info">
+          <section class="tarjeta" aria-labelledby="quienes-titulo">
+            <h2 id="quienes-titulo">Quiénes somos</h2>
+            <p>Doragon es el licenciatario oficial de cartas coleccionables Dragon Ball en Latinoamérica. Vendemos sobres con apertura tipo gachapon y cartas sueltas, con envíos a todo el país.</p>
+          </section>
+
+          <section class="tarjeta" aria-labelledby="licencia-titulo">
+            <h2 id="licencia-titulo">Licencia oficial</h2>
+            <p>Todo el material que vendemos está autorizado por el titular de la marca. No comercializamos cartas apócrifas ni de origen desconocido.</p>
+          </section>
+
+          <section class="tarjeta" aria-labelledby="coleccion-titulo">
+            <h2 id="coleccion-titulo">Cómo armamos el catálogo</h2>
+            <p>Cada colección (Saiyan, Namek, Torneo de Cell, Fuerzas Especiales y las que se van agregando) tiene su propio set de rarezas y probabilidades publicadas. Los sobres de drop semanal tienen stock limitado y garantizan una carta 5★ o superior.</p>
+          </section>
+
+          <section class="tarjeta" aria-labelledby="envios-titulo">
+            <h2 id="envios-titulo">Envíos y soporte</h2>
+            <p>Las cartas que sacás quedan en tu inventario digital y podés agrupar varias en un mismo envío. Si tenés dudas sobre un pedido o una apertura, el equipo de <a href="#contacto">contacto</a> responde en 24 a 48 horas hábiles.</p>
+          </section>
+        </div>
+
+        <section class="faq seccion" id="faq" aria-labelledby="faq-titulo">
+          <h2 id="faq-titulo">Preguntas frecuentes</h2>
+
+          <div class="preguntas">
+            <details id="faq-apertura" open>
+              <summary>¿La carta que sale del sobre es realmente aleatoria?</summary>
+              <p>Sí. Cada apertura usa un sorteo con las probabilidades publicadas en la ficha del sobre. Las cartas exclusivas son la única excepción: se compran de forma directa, sin azar.</p>
+            </details>
+
+            <details id="faq-envios">
+              <summary>¿Cuánto tarda el envío de mis cartas?</summary>
+              <p>El envío a domicilio demora 48 horas hábiles desde que lo pedís desde tu inventario. También podés retirarlo sin cargo en un punto de retiro.</p>
+            </details>
+
+            <details id="faq-exclusivas">
+              <summary>¿Qué son las cartas exclusivas?</summary>
+              <p>Son cartas que se compran sueltas, sin apertura de sobre ni azar de por medio, a un precio fijo publicado en el catálogo.</p>
+            </details>
+
+            <details id="faq-duplicados">
+              <summary>¿Qué pasa si me sale una carta que ya tengo?</summary>
+              <p>Las cartas duplicadas no tienen reembolso del 100%, pero podés canjearlas por crédito parcial desde el inventario en Mi cuenta.</p>
+            </details>
+
+            <details id="faq-drop">
+              <summary>¿Cómo funciona el drop semanal de cartas 5★?</summary>
+              <p>Cada semana liberamos un sobre con stock limitado que garantiza una carta 5★ o superior. Cuando se agota el stock hay que esperar al drop siguiente.</p>
+            </details>
+
+            <details id="faq-pagos">
+              <summary>¿Qué medios de pago aceptan?</summary>
+              <p>Podés pagar con tarjeta, billetera virtual o transferencia bancaria.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="como seccion" id="como-funciona" aria-labelledby="como-funciona-titulo">
+          <h2 id="como-funciona-titulo">Cómo funciona</h2>
+          <ol>
+            <li class="tarjeta">
+              <h3>Elegí tu sobre</h3>
+              <p>Filtrá por colección, rareza o precio y mirá las probabilidades antes de comprar.</p>
+            </li>
+            <li class="tarjeta">
+              <h3>Abrilo en 3D</h3>
+              <p>Pagás una vez y el sobre se abre con animación. El resultado es inmediato y queda registrado.</p>
+            </li>
+            <li class="tarjeta">
+              <h3>Recibila en casa</h3>
+              <p>Guardá tus cartas en el inventario y pedí el envío cuando quieras, todo junto.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="terminos seccion" id="terminos" aria-labelledby="terminos-titulo">
+          <h2 id="terminos-titulo">Términos y condiciones</h2>
+
+          <div class="tarjeta">
+            <h3>1. Sobre las compras y aperturas</h3>
+            <p>La compra de un sobre habilita una única apertura, cuyo resultado es definitivo y no reembolsable. Las probabilidades publicadas son fijas por sobre y no varían según el historial del usuario.</p>
+
+            <h3>2. Envíos y titularidad</h3>
+            <p>Las cartas obtenidas quedan acreditadas en el inventario del usuario y pueden despacharse en un único envío. Doragon actúa como licenciatario oficial y no comercializa material apócrifo.</p>
+
+            <h3>3. Cartas duplicadas</h3>
+            <p>Las cartas duplicadas no tienen reembolso del 100%, pero pueden canjearse por crédito parcial dentro del inventario del usuario.</p>
+
+            <h3>4. Drop semanal 5★</h3>
+            <p>Los sobres de drop semanal tienen stock limitado. Agotado el stock, la próxima unidad estará disponible en el siguiente drop.</p>
+          </div>
+        </section>
+
+        <section class="contacto seccion" id="contacto" aria-labelledby="contacto-titulo">
+          <h2 id="contacto-titulo">Contacto</h2>
+          <p class="subtitulo">Respondemos en 24 a 48 horas hábiles. Si es por un pedido, sumá el número para ir más rápido.</p>
+
+          <form class="formulario tarjeta">
+            <div class="rejilla">
+              <div class="campo">
+                <label for="contacto-nombre">Nombre y apellido *</label>
+                <input type="text" id="contacto-nombre" name="nombre" placeholder="Tu nombre" aria-required="true" required>
+              </div>
+
+              <div class="campo">
+                <label for="contacto-email">Email *</label>
+                <input type="email" id="contacto-email" name="email" placeholder="tu@email.com" aria-required="true" required>
+              </div>
+
+              <div class="campo">
+                <label for="contacto-motivo">Motivo de consulta *</label>
+                <select id="contacto-motivo" name="motivo" aria-required="true" required>
+                  <option value="">Seleccioná una opción</option>
+                  <option value="pedido">Estado de un pedido</option>
+                  <option value="pago">Problema con un pago</option>
+                  <option value="apertura">Apertura de sobre</option>
+                  <option value="cuenta">Mi cuenta</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="campo">
+                <label for="contacto-pedido">N° de pedido (opcional)</label>
+                <input type="text" id="contacto-pedido" name="pedido" placeholder="DR-00000">
+              </div>
+
+              <div class="campo completo">
+                <label for="contacto-mensaje">Mensaje *</label>
+                <textarea id="contacto-mensaje" name="mensaje" maxlength="800" placeholder="Contanos qué pasó…" aria-required="true" required></textarea>
+              </div>
+            </div>
+
+            <label class="casilla">
+              <input type="checkbox" name="privacidad" aria-required="true" required>
+              Acepto la política de privacidad y el uso de mis datos para responder esta consulta.
+            </label>
+
+            <div class="acciones">
+              <p>Campos marcados con * son obligatorios.</p>
+              <button class="boton primario" type="submit">Enviar consulta</button>
+            </div>
+          </form>
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="marca">
+        <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="32" height="32">
+        <p>Licenciatario oficial de cartas coleccionables Dragon Ball en Latinoamérica.</p>
+      </div>
+
+      <nav class="enlaces" aria-label="Tienda">
+        <h2>Tienda</h2>
+        <ul>
+          <li><a href="catalogo.html">Sobres</a></li>
+          <li><a href="catalogo.html">Cartas sueltas</a></li>
+          <li><a href="catalogo.html">Drop 5★</a></li>
+        </ul>
+      </nav>
+
+      <nav class="enlaces" aria-label="Institucional">
+        <h2>Institucional</h2>
+        <ul>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="nosotros.html#terminos">Términos y condiciones</a></li>
+        </ul>
+      </nav>
+
+      <form class="suscripcion">
+        <h2>Novedades de drops</h2>
+        <label class="solo-lectores" for="newsletter-email">Tu email</label>
+        <div class="campos">
+          <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" aria-required="true" required>
+          <button class="boton oscuro" type="submit">
+            <img src="assets/icons/flecha-derecha.svg" alt="" width="16" height="16">
+            <span class="solo-lectores">Suscribirme</span>
+          </button>
+        </div>
+      </form>
+
+      <p class="legal">© 2026 Doragon. Dragon Ball™ y personajes relacionados son marcas de sus respectivos titulares. Buenos Aires, Argentina.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

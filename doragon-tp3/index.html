@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doragon · Cartas coleccionables Dragon Ball</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo/doragon-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="index.html" aria-label="Doragon, ir al inicio">
+        <img src="assets/img/logo/doragon-logo.svg" alt="" width="40" height="40">
+        <span><span class="nombre">DORAGON</span><span class="lema">Cartas oficiales</span></span>
+      </a>
+
+      <nav class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <form class="buscador" role="search" action="catalogo.html" method="get">
+        <label class="solo-lectores" for="buscador">Buscar carta o sobre</label>
+        <input type="search" id="buscador" name="q" placeholder="Buscar carta o sobre">
+        <button type="submit">
+          <img src="assets/icons/buscar.svg" alt="" width="18" height="18">
+          <span class="solo-lectores">Buscar</span>
+        </button>
+      </form>
+
+      <a class="icono cuenta" href="cuenta.html">
+        <img src="assets/icons/cuenta.svg" alt="" width="18" height="18">
+        <span class="solo-lectores">Mi cuenta</span>
+      </a>
+      <a class="icono carrito" href="carrito.html">
+        <img src="assets/icons/carrito.svg" alt="" width="18" height="18">
+        <span class="solo-lectores">Carrito, 3 productos</span>
+        <span class="contador" aria-hidden="true">3</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="principal contenedor pagina-inicio">
+
+    <section class="heroe seccion" aria-labelledby="hero-titulo">
+      <p class="etiqueta">Licencia oficial Dragon Ball</p>
+      <h1 id="hero-titulo">Abrí un sobre, descubrí tu carta.</h1>
+      <p class="subtitulo">Cada sobre se abre en 3D y revela tu carta al instante. Coleccionables oficiales, envío a todo el país y cartas sueltas si ya sabés lo que buscás.</p>
+      <p class="acciones">
+        <a class="boton primario" href="tirada.html">Abrir un sobre</a>
+        <a class="boton secundario" href="catalogo.html">Ver catálogo completo</a>
+      </p>
+    </section>
+
+    <section class="tiradas seccion" aria-labelledby="tiradas-semana-titulo">
+      <h2 id="tiradas-semana-titulo">Tiradas de la semana</h2>
+
+      <article class="destacada" aria-labelledby="sobre-legendario-titulo">
+        <p class="etiqueta naranja">Tirada 01 de 04</p>
+        <h3 id="sobre-legendario-titulo">Sobre Legendario Shenron</h3>
+        <p class="descripcion">La novedad de esta semana: solo 100 unidades, garantiza una carta 4★ o superior y se abre con la animación extendida de las siete esferas.</p>
+        <p class="etiqueta naranja">¡Solo quedan 10 disponibles!</p>
+
+        <dl class="cuenta-regresiva" aria-label="Tiempo restante de la tirada">
+          <div>
+            <dt>Días</dt>
+            <dd>02</dd>
+          </div>
+          <div>
+            <dt>Horas</dt>
+            <dd>14</dd>
+          </div>
+          <div>
+            <dt>Minutos</dt>
+            <dd>05</dd>
+          </div>
+        </dl>
+
+        <p class="acciones">
+          <a class="boton amarillo" href="tirada.html">Tirá ahora</a>
+          <a class="enlace" href="catalogo.html">Ver detalle del sobre</a>
+        </p>
+      </article>
+
+      <ul class="lista-tiradas">
+        <li class="tarjeta-tirada namek">
+          <h3>Saga Namek</h3>
+          <p>Ambientada en el Planeta Namek</p>
+          <p class="etiqueta oscura cupos">42 disponibles</p>
+          <a href="tirada.html">Tirar</a>
+        </li>
+        <li class="tarjeta-tirada saiyan">
+          <h3>Élite Saiyan</h3>
+          <p>Ambientada en el Planeta Vegeta</p>
+          <p class="etiqueta oscura cupos">18 disponibles</p>
+          <a href="tirada.html">Tirar</a>
+        </li>
+        <li class="tarjeta-tirada cell">
+          <h3>Torneo de Cell</h3>
+          <p>Ambientada en los cañones rocosos</p>
+          <p class="etiqueta oscura cupos">61 disponibles</p>
+          <a href="tirada.html">Tirar</a>
+        </li>
+      </ul>
+
+      <p class="total">1.204 sobres abiertos hoy</p>
+    </section>
+
+    <section class="esferas tarjeta seccion" aria-labelledby="esferas-titulo">
+      <h2 id="esferas-titulo">Tenés 4 de las 7 esferas</h2>
+      <p class="subtitulo">Completá el set y desbloqueás una tirada legendaria.</p>
+      <ul class="bolas">
+        <li><img src="assets/img/esferas/esfera-1.svg" alt="" width="32" height="32"></li>
+        <li><img src="assets/img/esferas/esfera-2.svg" alt="" width="32" height="32"></li>
+        <li><img src="assets/img/esferas/esfera-3.svg" alt="" width="32" height="32"></li>
+        <li><img src="assets/img/esferas/esfera-4.svg" alt="" width="32" height="32"></li>
+        <li><img src="assets/img/esferas/esfera-5-apagada.svg" alt="" width="32" height="32"></li>
+        <li><img src="assets/img/esferas/esfera-6-apagada.svg" alt="" width="32" height="32"></li>
+        <li><img src="assets/img/esferas/esfera-7-apagada.svg" alt="" width="32" height="32"></li>
+      </ul>
+      <dl>
+        <dt>Esferas reunidas</dt>
+        <dd>4 de 7</dd>
+      </dl>
+    </section>
+
+    <img class="banner" src="assets/img/escenas/shenlong-banner.svg" alt="" width="1636" height="224">
+
+    <section class="destacados seccion" aria-labelledby="destacados-titulo">
+      <div class="encabezado">
+        <div>
+          <h2 id="destacados-titulo">Sobres destacados</h2>
+          <p class="subtitulo">Elegí tu colección</p>
+        </div>
+        <a class="boton secundario chico" href="catalogo.html">Ver todo el catálogo</a>
+      </div>
+
+      <ul class="grilla">
+        <li class="tarjeta-sobre">
+          <img src="assets/img/sobres/saiyan-elite.svg" alt="Sobre Saiyan Élite" width="134" height="184">
+          <div class="cuerpo">
+            <h3>Sobre Saiyan Élite</h3>
+            <p class="detalle">5 cartas · Colección Saiyan</p>
+            <div class="compra">
+              <p class="precio">$4.900</p>
+              <a class="boton primario chico" href="carrito.html">Comprar</a>
+            </div>
+          </div>
+        </li>
+        <li class="tarjeta-sobre azul">
+          <img src="assets/img/sobres/namek.svg" alt="Sobre Namek" width="134" height="184">
+          <div class="cuerpo">
+            <h3>Sobre Namek</h3>
+            <p class="detalle">5 cartas · Colección Namek</p>
+            <div class="compra">
+              <p class="precio">$4.200</p>
+              <a class="boton primario chico" href="carrito.html">Comprar</a>
+            </div>
+          </div>
+        </li>
+        <li class="tarjeta-sobre verde">
+          <img src="assets/img/sobres/torneo-cell.svg" alt="Sobre Torneo de Cell" width="134" height="184">
+          <div class="cuerpo">
+            <h3>Sobre Torneo de Cell</h3>
+            <p class="detalle">5 cartas · Serie 2</p>
+            <div class="compra">
+              <p class="precio">$5.400</p>
+              <a class="boton primario chico" href="carrito.html">Comprar</a>
+            </div>
+          </div>
+        </li>
+        <li class="tarjeta-sobre">
+          <img src="assets/img/sobres/fuerzas-especiales.svg" alt="Sobre Fuerzas Especiales" width="134" height="184">
+          <div class="cuerpo">
+            <h3>Sobre Fuerzas Especiales</h3>
+            <p class="detalle">5 cartas · Serie 1</p>
+            <div class="compra">
+              <p class="precio">$3.800</p>
+              <a class="boton primario chico" href="carrito.html">Comprar</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="marca">
+        <img src="assets/img/logo/doragon-logo.svg" alt="Doragon" width="32" height="32">
+        <p>Licenciatario oficial de cartas coleccionables Dragon Ball en Latinoamérica.</p>
+      </div>
+
+      <nav class="enlaces" aria-label="Tienda">
+        <h2>Tienda</h2>
+        <ul>
+          <li><a href="catalogo.html">Sobres</a></li>
+          <li><a href="catalogo.html">Cartas sueltas</a></li>
+          <li><a href="catalogo.html">Drop 5★</a></li>
+        </ul>
+      </nav>
+
+      <nav class="enlaces" aria-label="Institucional">
+        <h2>Institucional</h2>
+        <ul>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="nosotros.html#terminos">Términos y condiciones</a></li>
+        </ul>
+      </nav>
+
+      <form class="suscripcion">
+        <h2>Novedades de drops</h2>
+        <label class="solo-lectores" for="newsletter-email">Tu email</label>
+        <div class="campos">
+          <input type="email" id="newsletter-email" name="email" placeholder="tu@email.com" aria-required="true" required>
+          <button class="boton oscuro" type="submit">
+            <img src="assets/icons/flecha-derecha.svg" alt="" width="16" height="16">
+            <span class="solo-lectores">Suscribirme</span>
+          </button>
+        </div>
+      </form>
+
+      <p class="legal">© 2026 Doragon. Dragon Ball™ y personajes relacionados son marcas de sus respectivos titulares. Buenos Aires, Argentina.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
