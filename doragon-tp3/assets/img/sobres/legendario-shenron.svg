@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" role="img" aria-label="Sobre Legendario Shenron">
+  <defs>
+    <radialGradient id="burst" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#fff1c2"/>
+      <stop offset="45%" stop-color="#f2b705"/>
+      <stop offset="100%" stop-color="#3a2a00"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#241a05"/>
+      <stop offset="100%" stop-color="#050301"/>
+    </linearGradient>
+    <linearGradient id="flap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a2a05"/>
+      <stop offset="100%" stop-color="#100b02"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="10" y="10" width="380" height="540" rx="18" fill="url(#body)" stroke="#f2c94c" stroke-width="5"/>
+  <rect x="18" y="18" width="364" height="524" rx="13" fill="none" stroke="#f2c94c" stroke-width="1.5" opacity="0.6"/>
+
+  <circle cx="200" cy="210" r="150" fill="url(#burst)" opacity="0.55"/>
+
+  <polygon points="10,28 390,28 200,230" fill="url(#flap)" stroke="#f2c94c" stroke-width="3"/>
+  <line x1="10" y1="28" x2="200" y2="230" stroke="#f2c94c" stroke-width="1" opacity="0.5"/>
+  <line x1="390" y1="28" x2="200" y2="230" stroke="#f2c94c" stroke-width="1" opacity="0.5"/>
+
+  <g fill="#ff9d1f" stroke="#a85400" stroke-width="1.5">
+    <circle cx="90" cy="90" r="8"/>
+    <circle cx="130" cy="70" r="8"/>
+    <circle cx="200" cy="60" r="8"/>
+    <circle cx="270" cy="70" r="8"/>
+    <circle cx="310" cy="90" r="8"/>
+  </g>
+
+  <circle cx="200" cy="215" r="58" fill="#100b02" stroke="#f2c94c" stroke-width="5"/>
+  <path d="M162 235 C170 195 195 178 200 172 C205 178 230 195 238 235 C222 224 212 236 200 244 C188 236 178 224 162 235 Z"
+        fill="#3fae63" stroke="#1c5d38" stroke-width="2"/>
+  <circle cx="186" cy="205" r="4" fill="#e74c3c"/>
+  <circle cx="214" cy="205" r="4" fill="#e74c3c"/>
+
+  <rect x="30" y="450" width="340" height="66" rx="8" fill="#100b02" stroke="#f2c94c" stroke-width="2.5"/>
+  <text x="200" y="482" fill="#f2c94c" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" letter-spacing="1.5" text-anchor="middle">LEGENDARIO</text>
+  <text x="200" y="507" fill="#f2c94c" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" letter-spacing="1.5" text-anchor="middle">SHENRON</text>
+</svg>

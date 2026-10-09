@@ -1,0 +1,17 @@
+{
+  "name": "doragon-tp3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "five-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@12.8.1",
+  "type": "module",
+  "devDependencies": {
+    "five-server": "^0.5.0"
+  }
+}

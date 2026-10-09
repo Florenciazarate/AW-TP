@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 500" role="img" aria-label="Gohan">
+  <defs>
+    <radialGradient id="aura4" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#ffe3b8"/>
+      <stop offset="45%" stop-color="#c86a2f"/>
+      <stop offset="100%" stop-color="#3d1a1a"/>
+    </radialGradient>
+    <linearGradient id="frame4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d6b98a"/>
+      <stop offset="100%" stop-color="#8a6a3c"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="342" height="492" rx="20" fill="url(#frame4)"/>
+  <rect x="14" y="14" width="322" height="472" rx="14" fill="#1a1006"/>
+  <rect x="20" y="20" width="310" height="330" rx="10" fill="url(#aura4)"/>
+
+  <path d="M120 300 L120 218 Q120 192 148 188 L202 188 Q230 192 230 218 L230 300 Z" fill="#f2932f" stroke="#a85a10" stroke-width="3"/>
+  <rect x="148" y="216" width="54" height="16" fill="#5a2fa8" stroke="#3a1a70" stroke-width="2"/>
+  <rect x="118" y="296" width="114" height="16" fill="#3a1aa0"/>
+
+  <circle cx="175" cy="148" r="41" fill="#f3b58c" stroke="#a86840" stroke-width="2"/>
+  <path d="M142 132 C132 95 155 60 175 64 C185 46 218 50 220 74 C240 72 248 100 228 114 C234 128 222 138 210 132 C210 114 192 106 184 116 C180 100 158 100 152 114 C140 112 132 124 142 132 Z" fill="#171311"/>
+
+  <path d="M112 258 L90 226 M238 258 L260 226" stroke="#f3b58c" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="88" cy="221" r="11" fill="#f3b58c"/>
+  <circle cx="262" cy="221" r="11" fill="#f3b58c"/>
+
+  <rect x="20" y="392" width="310" height="88" rx="10" fill="#1a1006" stroke="#d6b98a" stroke-width="2"/>
+  <text x="175" y="436" fill="#d6b98a" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" text-anchor="middle">GOHAN</text>
+  <text x="175" y="460" fill="#e0b98f" font-family="Georgia, 'Times New Roman', serif" font-size="15" text-anchor="middle">Hijo de Goku</text>
+</svg>
