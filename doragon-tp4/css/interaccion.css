@@ -1,0 +1,35 @@
+[hidden] {
+  display: none;
+}
+
+.mensaje {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-verde);
+}
+
+.vacio {
+  padding: var(--espacio-3);
+  border: 1px dashed var(--color-borde);
+  border-radius: var(--radio-grande);
+  text-align: center;
+  color: var(--color-texto);
+}
+
+.contador-caracteres {
+  font-size: 0.75rem;
+  text-align: right;
+  color: var(--color-texto);
+}
+
+.pagina-pago .pedido .boton {
+  margin-top: var(--espacio-2);
+}
+
+.pagina-carrito .descuento .mensaje {
+  margin-top: var(--espacio-1);
+}
+
+.pie .suscripcion .mensaje {
+  font-size: 0.8125rem;
+}
