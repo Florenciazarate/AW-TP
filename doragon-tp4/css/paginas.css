@@ -1,0 +1,817 @@
+.pagina-inicio .heroe {
+  justify-items: start;
+  padding-block: var(--espacio-3);
+}
+
+.pagina-inicio .heroe h1 {
+  max-width: 14ch;
+  font-size: clamp(2.25rem, 8vw, 3.75rem);
+}
+
+.pagina-inicio .heroe .subtitulo {
+  max-width: 34rem;
+}
+
+.pagina-inicio .heroe .acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.pagina-inicio .tiradas .destacada {
+  display: grid;
+  gap: var(--espacio-2);
+  align-content: center;
+  justify-items: start;
+  min-height: 26rem;
+  padding: var(--espacio-4) var(--espacio-3);
+  border-radius: var(--radio-grande);
+  background: var(--color-tinta) url("../assets/img/escenas/hero-home.svg") center / cover no-repeat;
+  color: var(--color-blanco);
+}
+
+.pagina-inicio .tiradas .destacada h3 {
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+  line-height: 1.1;
+}
+
+.pagina-inicio .tiradas .destacada .descripcion {
+  max-width: 28rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.pagina-inicio .tiradas .cuenta-regresiva {
+  display: flex;
+  gap: var(--espacio-3);
+}
+
+.pagina-inicio .tiradas .cuenta-regresiva div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.pagina-inicio .tiradas .cuenta-regresiva dd {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.pagina-inicio .tiradas .cuenta-regresiva dt {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.pagina-inicio .tiradas .destacada .acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espacio-2);
+}
+
+.pagina-inicio .tiradas .destacada .enlace {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pagina-inicio .tiradas .lista-tiradas {
+  display: grid;
+  gap: var(--espacio-2);
+}
+
+.pagina-inicio .tiradas .tarjeta-tirada {
+  position: relative;
+  display: grid;
+  gap: 0.25rem;
+  align-content: end;
+  min-height: 11.5rem;
+  padding: 1.25rem;
+  overflow: hidden;
+  border-radius: var(--radio-grande);
+  box-shadow: var(--sombra-suave);
+  background-color: var(--color-campo);
+  background-position: center;
+  background-size: cover;
+}
+
+.pagina-inicio .tiradas .tarjeta-tirada.namek {
+  background-image: url("../assets/img/escenas/tirada-namek.svg");
+}
+
+.pagina-inicio .tiradas .tarjeta-tirada.saiyan {
+  background-image: url("../assets/img/escenas/tirada-saiyan.svg");
+}
+
+.pagina-inicio .tiradas .tarjeta-tirada.cell {
+  background-image: url("../assets/img/escenas/tirada-cell.svg");
+}
+
+.pagina-inicio .tiradas .tarjeta-tirada p {
+  font-size: 0.8125rem;
+}
+
+.pagina-inicio .tiradas .tarjeta-tirada .cupos {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.6875rem;
+}
+
+.pagina-inicio .tiradas .tarjeta-tirada a {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pagina-inicio .tiradas .total {
+  font-size: 0.8125rem;
+  color: var(--color-texto);
+}
+
+.pagina-inicio .esferas .bolas {
+  display: flex;
+  gap: var(--espacio-1);
+}
+
+.pagina-inicio .esferas .bolas img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.pagina-inicio .esferas dl {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.pagina-inicio .esferas dt {
+  font-weight: 700;
+}
+
+.pagina-inicio .banner {
+  width: 100%;
+}
+
+.pagina-inicio .destacados .grilla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espacio-2);
+}
+
+.pagina-catalogo .contenido {
+  display: grid;
+  gap: var(--espacio-3);
+}
+
+.pagina-catalogo .filtros {
+  display: grid;
+  gap: var(--espacio-2);
+  align-content: start;
+}
+
+.pagina-catalogo .filtros h2 {
+  margin: 0;
+}
+
+.pagina-catalogo .filtros .formulario {
+  gap: var(--espacio-3);
+}
+
+.pagina-catalogo .filtros .grupo {
+  display: grid;
+  gap: 0.625rem;
+  padding-bottom: var(--espacio-3);
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.pagina-catalogo .filtros .rejilla {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pagina-catalogo .filtros .acciones {
+  display: flex;
+  gap: var(--espacio-1);
+}
+
+.pagina-catalogo .filtros .aplicados {
+  font-size: 0.8125rem;
+  color: var(--color-texto);
+}
+
+.pagina-catalogo .resultados .grilla {
+  display: grid;
+  gap: var(--espacio-2);
+}
+
+.pagina-catalogo .resultados .mas {
+  text-align: center;
+}
+
+.pagina-tirada .estado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espacio-1) var(--espacio-3);
+}
+
+.pagina-tirada .estado h2 {
+  margin: 0;
+}
+
+.pagina-tirada .revelacion {
+  display: grid;
+  gap: var(--espacio-4);
+  padding: var(--espacio-4) var(--espacio-3);
+  border-radius: var(--radio-grande);
+  background: var(--color-tinta) url("../assets/img/escenas/fondo-reveal.svg") center / cover no-repeat;
+  color: #fff3d6;
+}
+
+.pagina-tirada .revelacion .texto {
+  display: grid;
+  gap: var(--espacio-2);
+  align-content: center;
+  justify-items: start;
+}
+
+.pagina-tirada .revelacion h2 {
+  font-size: clamp(2.25rem, 7vw, 3.75rem);
+}
+
+.pagina-tirada .revelacion h3 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--color-amarillo);
+}
+
+.pagina-tirada .revelacion .rasgos {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-amarillo);
+}
+
+.pagina-tirada .revelacion .descripcion {
+  max-width: 34rem;
+  color: rgba(255, 243, 214, 0.85);
+}
+
+.pagina-tirada .revelacion .datos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 34rem;
+}
+
+.pagina-tirada .revelacion .datos div {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radio-chico);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.pagina-tirada .revelacion .datos dt {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 243, 214, 0.7);
+}
+
+.pagina-tirada .revelacion .datos dd {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pagina-tirada .revelacion .acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espacio-2);
+}
+
+.pagina-tirada .revelacion .enlace {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pagina-tirada .revelacion img {
+  justify-self: center;
+  width: min(14rem, 70%);
+}
+
+.pagina-tirada .resto .grilla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espacio-2);
+}
+
+.pagina-tirada .resto .tarjeta-carta {
+  padding: 0.75rem;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-grande);
+  background-color: var(--color-blanco);
+  box-shadow: var(--sombra-suave);
+}
+
+.pagina-tirada .resumen {
+  display: grid;
+  gap: var(--espacio-2);
+}
+
+.pagina-tirada .resumen .acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-1);
+  margin-top: var(--espacio-2);
+}
+
+.pagina-cuenta .contenido {
+  display: grid;
+  gap: var(--espacio-3);
+}
+
+.pagina-cuenta .lateral,
+.pagina-cuenta .panel {
+  display: grid;
+  gap: var(--espacio-3);
+  align-content: start;
+}
+
+.pagina-cuenta .perfil {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--espacio-1) var(--espacio-2);
+  align-items: center;
+}
+
+.pagina-cuenta .perfil .avatar {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 50%;
+  background-color: var(--color-campo);
+  font-weight: 700;
+}
+
+.pagina-cuenta .perfil h2 {
+  margin: 0;
+}
+
+.pagina-cuenta .perfil .correo {
+  font-size: 0.8125rem;
+  color: var(--color-texto);
+}
+
+.pagina-cuenta .perfil .nivel,
+.pagina-cuenta .perfil .salir {
+  grid-column: 1 / -1;
+}
+
+.pagina-cuenta .perfil .nivel {
+  justify-self: start;
+}
+
+.pagina-cuenta .perfil .salir {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.pagina-cuenta .secciones {
+  padding: 0.75rem;
+}
+
+.pagina-cuenta .secciones a {
+  display: block;
+  padding: 0.7rem 1rem;
+  border-radius: var(--radio-chico);
+  font-size: 0.9375rem;
+  text-decoration: none;
+  color: var(--color-texto);
+}
+
+.pagina-cuenta .secciones a:hover {
+  background-color: var(--color-campo);
+  color: var(--color-tinta);
+}
+
+.pagina-cuenta .inventario .grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: var(--espacio-2);
+}
+
+.pagina-cuenta .inventario .mas {
+  text-align: center;
+}
+
+.pagina-cuenta .filas address {
+  font-size: 0.875rem;
+  font-style: normal;
+  color: var(--color-texto);
+}
+
+.pagina-cuenta .tiradas .acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-1);
+  margin-top: var(--espacio-2);
+}
+
+.pagina-carrito .contenido,
+.pagina-pago .contenido {
+  display: grid;
+  gap: var(--espacio-3);
+}
+
+.pagina-carrito .items .formulario {
+  gap: var(--espacio-2);
+}
+
+.pagina-carrito .items .item {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: var(--espacio-1) var(--espacio-2);
+  padding-block: var(--espacio-2);
+  border-top: 1px solid var(--color-borde);
+}
+
+.pagina-carrito .items .item img {
+  grid-row: span 3;
+  width: 4.5rem;
+  height: 6rem;
+  object-fit: contain;
+  border-radius: var(--radio-chico);
+  background: linear-gradient(165deg, #fff1de 0%, #ffd3a4 100%);
+}
+
+.pagina-carrito .items .item .detalle {
+  font-size: 0.8125rem;
+  color: var(--color-texto);
+}
+
+.pagina-carrito .items .item input {
+  width: 5rem;
+  text-align: center;
+}
+
+.pagina-carrito .items .item .importe {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-2);
+}
+
+.pagina-carrito .items .item .precio {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.pagina-carrito .items .acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-1);
+}
+
+.pagina-carrito .descuento form {
+  display: flex;
+  gap: var(--espacio-1);
+}
+
+.pagina-carrito .envio .opciones {
+  margin-bottom: var(--espacio-2);
+}
+
+.pagina-carrito .resumen .totales div,
+.pagina-pago .pedido .totales div {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.pagina-carrito .resumen .totales dd,
+.pagina-pago .pedido .totales dd {
+  font-weight: 600;
+}
+
+.pagina-carrito .resumen .totales .total,
+.pagina-pago .pedido .totales .total {
+  margin-top: var(--espacio-1);
+  padding-top: var(--espacio-2);
+  border-top: 1px solid var(--color-borde);
+  font-size: 1rem;
+}
+
+.pagina-carrito .resumen .totales .total dd,
+.pagina-pago .pedido .totales .total dd {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pagina-carrito .resumen .boton {
+  margin-top: var(--espacio-2);
+}
+
+.pagina-pago .pedido {
+  align-self: start;
+}
+
+.pagina-pago .pedido .filas li {
+  font-size: 0.875rem;
+}
+
+.pagina-pago .pedido .precio {
+  font-weight: 700;
+}
+
+.pagina-pago .pedido .totales {
+  margin-top: var(--espacio-2);
+}
+
+.pagina-pago .pedido form {
+  margin-top: var(--espacio-2);
+}
+
+.pagina-pago .pedido .nota {
+  margin-top: var(--espacio-2);
+  font-size: 0.75rem;
+  color: var(--color-texto);
+}
+
+.pagina-pago .metodo .formulario {
+  gap: var(--espacio-3);
+}
+
+.pagina-confirmacion .pasos {
+  justify-content: center;
+}
+
+.pagina-confirmacion .confirmado {
+  width: 100%;
+  max-width: 52rem;
+  margin-inline: auto;
+  padding: var(--espacio-4) var(--espacio-3);
+  text-align: center;
+}
+
+.pagina-confirmacion .confirmado .icono {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto var(--espacio-3);
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--color-verde);
+}
+
+.pagina-confirmacion .confirmado h1 {
+  margin-bottom: var(--espacio-2);
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+}
+
+.pagina-confirmacion .confirmado .resumen {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--espacio-2) var(--espacio-3);
+  margin-block: var(--espacio-3);
+  padding: var(--espacio-2) var(--espacio-3);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-medio);
+  background-color: var(--color-campo);
+  text-align: left;
+}
+
+.pagina-confirmacion .confirmado .resumen dt {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-texto);
+}
+
+.pagina-confirmacion .confirmado .resumen dd {
+  font-weight: 700;
+}
+
+.pagina-confirmacion .confirmado .acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.pagina-nosotros .contenido {
+  display: grid;
+  gap: var(--espacio-3);
+}
+
+.pagina-nosotros .indice ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-1);
+}
+
+.pagina-nosotros .indice a {
+  display: block;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radio-pildora);
+  background-color: var(--color-campo);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pagina-nosotros .bloques {
+  display: grid;
+  gap: var(--espacio-4);
+}
+
+.pagina-nosotros .info {
+  display: grid;
+  gap: var(--espacio-2);
+}
+
+.pagina-nosotros .info p {
+  color: var(--color-texto);
+}
+
+.pagina-nosotros .como ol {
+  display: grid;
+  gap: var(--espacio-2);
+  counter-reset: paso;
+}
+
+.pagina-nosotros .como li {
+  counter-increment: paso;
+}
+
+.pagina-nosotros .como li::before {
+  content: "Paso 0" counter(paso);
+  display: block;
+  margin-bottom: var(--espacio-1);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-primario-oscuro);
+}
+
+.pagina-nosotros .como h3 {
+  margin-bottom: var(--espacio-1);
+}
+
+.pagina-nosotros .como p,
+.pagina-nosotros .terminos p {
+  font-size: 0.9375rem;
+  color: var(--color-texto);
+}
+
+.pagina-nosotros .terminos h3 {
+  margin-top: var(--espacio-2);
+  font-size: 0.9375rem;
+}
+
+.pagina-nosotros .terminos h3:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 48em) {
+  .pagina-inicio .tiradas .lista-tiradas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pagina-catalogo .resultados .grilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pagina-tirada .revelacion .datos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pagina-tirada .resumen {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pagina-carrito .items .item {
+    grid-template-columns: 4.5rem 1fr auto auto;
+    align-items: center;
+  }
+
+  .pagina-carrito .items .item img {
+    grid-row: auto;
+  }
+
+  .pagina-nosotros .info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pagina-nosotros .como ol {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .pagina-inicio .heroe {
+    min-height: 22rem;
+    align-content: center;
+    background: url("../assets/img/efectos/rayos-naranjas-520.svg") no-repeat right center / 24rem;
+  }
+
+  .pagina-inicio .tiradas .destacada {
+    padding: var(--espacio-5) var(--espacio-5);
+  }
+
+  .pagina-inicio .destacados .grilla {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pagina-catalogo .contenido {
+    grid-template-columns: 17.5rem 1fr;
+    align-items: start;
+  }
+
+  .pagina-catalogo .resultados .grilla {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pagina-tirada .revelacion {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    padding: 4rem;
+  }
+
+  .pagina-tirada .resto .grilla {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pagina-cuenta .contenido {
+    grid-template-columns: 17.5rem 1fr;
+    align-items: start;
+  }
+
+  .pagina-carrito .contenido {
+    grid-template-columns: 1fr 23.75rem;
+    grid-template-areas:
+      "items resumen"
+      "descuento envio";
+    align-items: start;
+  }
+
+  .pagina-carrito .items {
+    grid-area: items;
+  }
+
+  .pagina-carrito .resumen {
+    grid-area: resumen;
+  }
+
+  .pagina-carrito .descuento {
+    grid-area: descuento;
+  }
+
+  .pagina-carrito .envio {
+    grid-area: envio;
+  }
+
+  .pagina-pago .contenido {
+    grid-template-columns: 1fr 22.5rem;
+    grid-template-areas:
+      "datos pedido"
+      "metodo pedido";
+  }
+
+  .pagina-pago .datos {
+    grid-area: datos;
+  }
+
+  .pagina-pago .metodo {
+    grid-area: metodo;
+  }
+
+  .pagina-pago .pedido {
+    grid-area: pedido;
+  }
+
+  .pagina-nosotros .contenido {
+    grid-template-columns: 14rem 1fr;
+    align-items: start;
+  }
+
+  .pagina-nosotros .indice {
+    position: sticky;
+    top: var(--espacio-2);
+  }
+
+  .pagina-nosotros .indice ul {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .pagina-nosotros .indice a {
+    border-radius: var(--radio-chico);
+    background-color: transparent;
+  }
+}

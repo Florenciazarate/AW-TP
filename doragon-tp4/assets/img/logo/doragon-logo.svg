@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Doragon">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#1c2a4a"/>
+      <stop offset="100%" stop-color="#0a1226"/>
+    </radialGradient>
+    <radialGradient id="ball" cx="38%" cy="32%" r="70%">
+      <stop offset="0%" stop-color="#ffd873"/>
+      <stop offset="55%" stop-color="#ff9d1f"/>
+      <stop offset="100%" stop-color="#d96e00"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="96" fill="url(#bg)"/>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#ffb84d" stroke-width="3"/>
+
+  <path d="M42 60 C30 40 40 20 62 16 C56 26 58 34 66 40 C80 30 100 32 108 46 C96 44 88 50 86 58 C98 58 108 68 108 80 C98 72 86 72 78 78 C82 88 78 100 66 104 C68 92 62 84 52 82 C50 92 40 98 30 94 C40 88 42 78 36 70 C28 72 20 66 20 56 C28 60 36 58 42 60 Z"
+        fill="#3fae63" stroke="#256b3c" stroke-width="2"/>
+  <circle cx="26" cy="58" r="3.5" fill="#c0392b"/>
+
+  <circle cx="100" cy="118" r="38" fill="url(#ball)" stroke="#a85400" stroke-width="2"/>
+  <ellipse cx="86" cy="104" rx="10" ry="6" fill="#ffe9b8" opacity="0.7"/>
+  <g fill="#c0392b">
+    <polygon points="100,102 103,110 111,110 104.5,115 107,123 100,118 93,123 95.5,115 89,110 97,110" />
+    <polygon points="100,102 103,110 111,110 104.5,115 107,123 100,118 93,123 95.5,115 89,110 97,110" transform="translate(-24,-8) scale(0.55)"/>
+    <polygon points="100,102 103,110 111,110 104.5,115 107,123 100,118 93,123 95.5,115 89,110 97,110" transform="translate(24,-8) scale(0.55)"/>
+    <polygon points="100,102 103,110 111,110 104.5,115 107,123 100,118 93,123 95.5,115 89,110 97,110" transform="translate(-12,16) scale(0.55)"/>
+  </g>
+
+  <text x="100" y="176" fill="#ffd873" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="2" text-anchor="middle">DORAGON</text>
+</svg>
