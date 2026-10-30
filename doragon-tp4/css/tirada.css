@@ -1,0 +1,16 @@
+.pagina-tirada .apertura {
+  display: grid;
+  gap: var(--espacio-2);
+  justify-items: center;
+  padding: var(--espacio-4) var(--espacio-3);
+  text-align: center;
+}
+
+.pagina-tirada .apertura img {
+  width: 8.5rem;
+  height: auto;
+}
+
+.pagina-tirada .resultado > * + * {
+  margin-top: var(--espacio-4);
+}
