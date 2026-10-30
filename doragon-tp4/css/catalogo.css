@@ -1,0 +1,186 @@
+.pagina-catalogo .aplicados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-1);
+}
+
+.pagina-catalogo .aplicados li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.pagina-catalogo .aplicados button {
+  padding: 0 0.25rem;
+  border: 0;
+  background: none;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.tarjeta-sobre h3 .detalle-abrir {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tarjeta-sobre h3 .detalle-abrir:hover {
+  color: var(--color-primario-oscuro);
+  text-decoration: underline;
+}
+
+dialog.ventana {
+  width: min(56rem, calc(100% - 2rem));
+  max-height: calc(100% - 2rem);
+  padding: 0;
+  overflow: auto;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-grande);
+  background-color: var(--color-blanco);
+  color: var(--color-tinta);
+  box-shadow: 0 20px 44px rgba(27, 27, 46, 0.22);
+}
+
+dialog.ventana::backdrop {
+  background-color: rgba(27, 27, 46, 0.55);
+}
+
+.ventana .contenido-detalle {
+  position: relative;
+  display: grid;
+  gap: var(--espacio-3);
+  padding: var(--espacio-3);
+}
+
+.ventana .contenido-detalle > img {
+  width: 100%;
+  max-height: 16rem;
+  padding: var(--espacio-2);
+  object-fit: contain;
+  border-radius: var(--radio-medio);
+  background: linear-gradient(165deg, #fff1de 0%, #ffd3a4 100%);
+}
+
+.ventana .informacion {
+  display: grid;
+  gap: var(--espacio-2);
+  align-content: start;
+}
+
+.ventana .informacion h2 {
+  padding-right: 2.5rem;
+}
+
+.ventana .cerrar {
+  position: absolute;
+  top: var(--espacio-3);
+  right: var(--espacio-3);
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-chico);
+  background-color: var(--color-campo);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ventana .etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-1);
+}
+
+.ventana .probabilidades {
+  padding: var(--espacio-2);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-medio);
+}
+
+.ventana .probabilidades h3 {
+  margin-bottom: var(--espacio-1);
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-texto);
+}
+
+.ventana .probabilidades li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-block: 0.25rem;
+  font-size: 0.8125rem;
+}
+
+.ventana .probabilidades li span:first-child {
+  width: 2rem;
+  font-weight: 600;
+}
+
+.ventana .probabilidades li span:last-child {
+  width: 2.75rem;
+  text-align: right;
+}
+
+.ventana .stock {
+  font-size: 0.875rem;
+  color: var(--color-texto);
+}
+
+.ventana .compra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espacio-2);
+}
+
+.ventana .total {
+  min-width: 5.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ventana .cantidad {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-chico);
+  background-color: var(--color-campo);
+}
+
+.ventana .cantidad button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  background: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.ventana .cantidad input {
+  width: 3.5rem;
+  padding: 0.5rem 0;
+  border: 0;
+  background: none;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .ventana .contenido-detalle {
+    grid-template-columns: 18rem 1fr;
+  }
+
+  .ventana .contenido-detalle > img {
+    max-height: 22rem;
+  }
+}
